@@ -1,0 +1,20 @@
+A = [1 1 1; 2 2 2; 3 3 3];
+
+% Use the size() function to compute the number of rows and columns of matrix A
+[numRows, numCols] = size(A);
+
+% Use the eye() function to create the 4x4 identity matrix. Store this matrix as I
+I = eye(4);
+
+% Compute the transpose of the matrix A. Store this transposed matrix as the matrix D
+D = A.';
+
+% Displaying the results
+disp('Matrix A:');
+disp(A);
+disp(['Number of Rows in A: ' num2str(numRows)]);
+disp(['Number of Columns in A: ' num2str(numCols)]);
+disp('Identity Matrix I:');
+disp(I);
+disp('Transposed Matrix D:');
+disp(D);
