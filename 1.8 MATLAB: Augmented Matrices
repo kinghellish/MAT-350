@@ -1,0 +1,7 @@
+A = [1, 3, -2, 0, 2, 0; 2, 6, -5, -2, 4, -3; 0, 0, 1, 5, 0, 3; 1, 3, 0, 4, 2, 9]
+b = [0; -1; 1; 3]
+Ab = [A b]
+[rowreducedAb, pivotvarsAb] = rref(Ab)
+[numeqns, numvars] = size(A)
+[numrows, numpivotvars] = size(pivotvarsAb)
+numfreevars = numvars - numpivotvars
